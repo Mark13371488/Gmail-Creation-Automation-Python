@@ -108,9 +108,11 @@ def fill_form(driver):
         
        # Create custom email
         time.sleep(2)
-        if driver.find_elements(By.CLASS_NAME, "uxXgMe"):
+        try:
             create_own_option = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "[jsname='CeL6Qc']")))
             create_own_option.click()
+        except:
+            print("Unable to find username button.")
         
         wait.until(EC.element_to_be_clickable((By.NAME, "Username")))
         username_field = driver.find_element(By.NAME, "Username")
