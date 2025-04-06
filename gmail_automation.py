@@ -63,7 +63,7 @@ your_username = f"{your_first_name_normalized}.{your_last_name_normalized}{rando
 
 your_birthday = "02 3 1989" #dd m yyyy exp : 24 11 2003
 your_gender = "1" # 1:F 2:M 3:Not say 4:Custom
-your_password = "x,nscldsj123...FDKZ"
+your_password = "fhsascvasj&dj"
 
 def fill_form(driver):
     try:
