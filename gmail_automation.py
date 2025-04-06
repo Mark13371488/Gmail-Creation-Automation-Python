@@ -10,6 +10,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 import random
 import time
+import traceback
 from unidecode import unidecode
 
 # Chrome options
@@ -171,7 +172,7 @@ def fill_form(driver):
 
     except Exception as e:
         print("Failed to create your Gmail, Sorry")
-        print(e)
+        traceback.print_exc()
     finally:
         driver.quit()
 
