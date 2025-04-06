@@ -38,7 +38,7 @@ jobs:
     - name: Install Python packages
       run: |
         python -m pip install --upgrade pip
-        pip install selenium
+        pip install selenium unidecode
 
     - name: Run automation script with virtual display
       run: |
